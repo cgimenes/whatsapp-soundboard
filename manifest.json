@@ -1,0 +1,30 @@
+{
+    "name": "Whatsapp Soundboard",
+    "description": "Whatsapp Soundboard",
+    "version": "0.1.0",
+    "manifest_version": 2,
+    "icons": {
+        "16": "src/images/wappsb-16x16.png",
+        "32": "src/images/wappsb-32x32.png",
+        "128": "src/images/wappsb-128x128.png"
+    },
+    "background": {
+        "scripts": ["src/js/background.js"]
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://web.whatsapp.com/*"],
+          "js": ["src/js/content_script.js"]
+        }
+    ],
+    "options_page": "src/html/options.html",
+    "browser_action": {
+        "default_popup": "src/html/popup.html"
+    },
+    "permissions": [
+        "https://web.whatsapp.com/*"
+    ],
+    "web_accessible_resources": [
+        "src/images/*"
+    ]
+}

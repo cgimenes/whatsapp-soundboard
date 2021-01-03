@@ -1,0 +1,8 @@
+#main > footer > .copyable-area > div:nth-child(3) {
+    display: flex;
+    color: var(--icon);
+}
+
+.icon {
+    margin-right: 10px;
+}
