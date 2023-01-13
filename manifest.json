@@ -14,7 +14,7 @@
     "content_scripts": [
         {
           "matches": ["https://web.whatsapp.com/*"],
-          "js": ["src/js/content_script.js"]
+          "js": ["src/js/foreground.js", "src/js/ua-parser.min.js"]
         }
     ],
     "options_page": "src/html/options.html",
